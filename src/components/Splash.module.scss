@@ -1,0 +1,24 @@
+.Splash {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(../assets/images/allure_therapy-hub.gif);
+}
+
+.text {
+    width: 40rem;
+    height: 10em;
+    background-color: aqua;
+    border-radius: 0.5em;
+    padding: 10px 10px;
+    animation: pulse 4s infinite;
+}
+
+@keyframes pulse {
+    50% {
+        opacity: 0;
+    }
+}
