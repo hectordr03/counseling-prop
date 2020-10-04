@@ -1,38 +1,52 @@
+.Nav {
+  background-color: #353535;
+  padding: 0;
+  margin: 0;
+  height: 3em;
+}
+
 .list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 li {
   list-style: none;
-  background-color: black;
+  background-color: #50b2c0;
   color: white;
   padding: 10px 10px;
   border-radius: 0.5em;
+  margin-top: 5px;
   cursor: pointer;
 }
 
 li:hover {
-  -webkit-animation: makeBig 2s;
-          animation: makeBig 2s;
+  -webkit-transition: ease-in-out;
+  transition: ease-in-out;
+  background-color: #ff4000;
+  -webkit-animation: makeBig 0.3s;
+          animation: makeBig 0.3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes makeBig {
   to {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
 }
 
 @keyframes makeBig {
   to {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
 }
 /*# sourceMappingURL=Nav.module.css.map */

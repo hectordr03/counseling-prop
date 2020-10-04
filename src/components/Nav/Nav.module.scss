@@ -1,18 +1,33 @@
+$prim-color: #50b2c0;
+$active-color: #ff4000;
+
+.Nav {
+    background-color: rgb(53, 53, 53);
+    padding: 0;
+    margin: 0;
+    height: 3em;
+}
+
 .list {
 	display: flex;
-	justify-content: space-around;
+    justify-content: space-around;
+    align-items: center;
 }
 
 li {
 	list-style: none;
-	background-color: black;
+	background-color: $prim-color;
 	color: white;
     padding: 10px 10px;
     border-radius: 0.5em;
+    margin-top: 5px;
+
 	cursor: pointer;
 
 	&:hover {
-        animation: makeBig 2s;
+        transition: ease-in-out;
+        background-color: $active-color;
+        animation: makeBig 0.3s;
         //* "animation-fill-mode: forwards;" stops animation on it's last frame
         animation-fill-mode: forwards;
 	}
@@ -20,6 +35,6 @@ li {
 
 @keyframes makeBig {
     to {
-        transform: scale(1.5);
+        transform: scale(1.2);
     }
 }
