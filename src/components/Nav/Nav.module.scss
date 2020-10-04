@@ -1,0 +1,24 @@
+.list {
+	display: flex;
+	justify-content: space-around;
+}
+
+li {
+	list-style: none;
+	background-color: black;
+	color: white;
+	padding: 10px 10px;
+	cursor: pointer;
+
+	&:hover {
+        animation: makeBig 2s;
+        //* "animation-fill-mode: forwards;" stops animation on it's last frame
+        animation-fill-mode: forwards;
+	}
+}
+
+@keyframes makeBig {
+    to {
+        transform: scale(1.5);
+    }
+}
